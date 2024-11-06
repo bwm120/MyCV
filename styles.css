@@ -1,0 +1,529 @@
+* {
+    margin: 0 ;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    font: 16px / 1.7 Open Sans, arial, Helvetica Neue, Helvetica;
+    margin: auto;
+    width: 100vw;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: top linear forwards 1s ;
+}
+@keyframes top {
+    from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+ ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeInUp 0.5s ease forwards; 
+  }
+
+  li:nth-child(1) { animation-delay: 0s; }
+  li:nth-child(2) { animation-delay: 0.2s; }
+  li:nth-child(3) { animation-delay: 0.4s; }
+  li:nth-child(4) { animation-delay: 0.6s; }
+  li:nth-child(5) { animation-delay: 0.8s; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.navbar ul {
+    display: flex;
+}
+.name {
+    margin-left: 100px;
+}
+.listItem {
+    margin-right: 100px;
+}
+.item {
+    margin-left: 50px;
+    font-weight: 700;
+}
+.hireme  {
+    background-color: black;
+    padding: 3px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hireme a {
+    color: white;
+}
+
+.introduce {
+    margin-top: 200px;
+    margin-left: 100px;
+    animation: introduce linear forwards 1s;
+}
+@keyframes introduce {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-40px);
+    }
+}
+.hello {
+    animation: hello linear forwards 1.2s
+}
+@keyframes hello {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+.im {
+    height: 35px;
+    width: 100vw;
+    color: orange;
+    border-right: .15em solid orange;
+    animation: im 4s steps(100, end), blink-caret .5s step-end forwards;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+}
+@keyframes im {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+  }
+.imWD {
+    margin-top: 5px;
+    width: 600px;
+    color: rgb(0, 0, 0);
+    animation: imWD linear forwards 1s;
+}
+@keyframes imWD {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+.btnhireme {
+    margin-top: 25px;
+    font-weight: 700;
+    animation: btnhireme linear forwards 1.6s;
+}
+@keyframes btnhireme {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+.buttonHireMe {
+    background-color: black;
+    color: white;
+    padding: 7px 35px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.buttonResume {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 7px 35px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 25px;
+    font-weight: 700;
+}
+.logoIntroduce {
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    animation: logoIntroduce linear forwards 1.8s;
+}
+@keyframes logoIntroduce {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+.fa-brands {
+    position: absolute;
+}
+.fa-facebook  {
+    font-size: 30px
+}
+.fa-github {
+    left: 50px;
+    font-size: 30px;
+}
+.fa-youtube {
+    left: 100px;
+    font-size: 30px;
+}
+.header {
+    border-bottom: 1px solid rgb(154, 154, 154);
+    height: 650px;
+    background: linear-gradient(to right, #00ffa6, #00aaff);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.mySkill {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.progressAll {
+    width: 500px;
+    height: 350px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.itemprogress {
+    margin-top: 25px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.itemprogress label {
+    position: absolute;
+}
+#progress {
+    width: 300px; 
+    height: 10px;
+    margin-left: 110px;
+  }
+  
+  #progress::-webkit-progress-bar {
+    background-color: #e0e0e0; 
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: -15px;
+  }
+  
+  #progress::-webkit-progress-value {
+    background-color: orange;
+    border-radius: 10px;
+  }
+  
+.itemprogress progress {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.boxProgrammingLanguage {
+    position: relative;
+}
+.boxC {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 250px;
+    left: 800px;
+    box-shadow: 5px 5px 15px 5px;
+}
+.fa-c {
+    font-size: 35px;
+    color: white;
+}
+.boxReact {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 250px;
+    left: 1050px;
+    box-shadow: 5px 5px 15px 5px;
+}
+.fa-react {
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+.boxPython {
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 50px;
+    left: 1050px;
+    box-shadow: 5px 5px 15px 5px;
+}
+.fa-python {
+    font-size: 35px;
+    color: rgb(0, 0, 0)
+}
+.boxJava {
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 50px;
+    left: 800px;
+    box-shadow: 5px 5px 15px 5px;
+}
+.fa-java {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    height: 700px;
+}
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+.nameProduct {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+.boxProductImg {
+    display: flex;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.ProductImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    width: 300px;
+    height: 200px;
+}
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    background: linear-gradient(to left, #ff00d0, #ff0066);
+    width: 300px;
+    height: 200px;
+}
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    background: linear-gradient(to left, #ff8800, #a64b00);
+    width: 300px;
+    height: 200px;  
+}
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    background: linear-gradient(to left, #00ffee, #ffffff);
+    width: 300px;
+    height: 200px;  
+}
+.ResumeBox {
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+}
+.ResumeBox1 {
+    width: 500px;
+    height: 300px;
+    border: 3px solid yellow;
+    margin-left: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px yellow;
+
+}
+.ResumeBox1 p {
+    padding: 15px;
+}
+.ResumeBox1 h3 {
+    padding: 15px 15px;
+    
+}
+.ResumeBox1 h5 {
+    padding: 1px 15px;
+    color: rgb(255, 174, 0);
+}
+.ResumeBox2 p {
+    padding: 15px;
+}
+.ResumeBox2 h3 {
+    padding: 15px 15px;
+    
+}
+.ResumeBox2 h5 {
+    padding: 1px 15px;
+    color: rgb(255, 174, 0);
+}
+
+.ResumeBox2 {
+    width: 500px;
+    height: 300px;
+    border: 3px solid yellow;
+    margin-left: 100px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 5px yellow;
+}
+.nameResumeBox {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.boxContact {
+    position: relative;
+    height: 800px;
+}
+.feedback {
+    font-weight: 700;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+}
+.boxFeedback {
+    position: absolute;
+    width: 300px;
+    border-radius: 25px;
+    flex-direction: column ;
+    height: 300px;
+    left: 800px;
+    top: 200px;
+    background: linear-gradient(to left, #ccff00, #7bff00);
+    margin-bottom: 150px;
+}
+.inputfeedback {
+    margin-top: 25px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 250px;
+    padding: 5px;
+    box-shadow: 1px 1px 15px 1px rgb(255, 255, 255);
+    color: white;
+    margin-left: 25px;
+}
+.inputfeedback::placeholder {
+    color: white;
+}
+.sent {
+    margin-top: 25px;
+}
+.sent {
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    width: 250px;
+    padding: 10px;
+    border-radius: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.main {
+    height: 100px;
+}
+.btnsent {
+    margin-top: -10px;
+}
+.letsTalk {
+    background-color: rgb(255, 179, 0);
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+.iconContact {
+    position: absolute;
+    top: 95%;
+    left: 45%;
+}
+.letsTalkbox {
+    height: 100px;
+}
+.listdongluc {
+    text-align: center;
+    margin-top: 15px;
+}
+.listdongluc {
+    height: 35px;
+    width: 100vw;
+    color: rgb(0, 0, 0);
+    border-right: .15em solid orange;
+    animation: im 10s steps(500, end), blink-caret 1s step-end forwards;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+}
+@keyframes .listdongluc {
+    from { width: 0%; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: rgb(255, 255, 255); }
+  }
